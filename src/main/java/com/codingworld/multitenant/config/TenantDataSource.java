@@ -45,6 +45,7 @@ public class TenantDataSource implements Serializable {
 
     private DataSource createDataSource(String name) {
         DataSourceConfig config = configRepo.findByName(name);
+        System.out.println(config.getName());
         if (config != null) {
             DataSourceBuilder factory = DataSourceBuilder
                     .create().driverClassName(config.getDriverClassName())

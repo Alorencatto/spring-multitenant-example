@@ -12,6 +12,7 @@ import java.io.Serializable;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class DataSourceConfig implements Serializable {
     private static final long serialVersionUID = 5104181924076372196L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

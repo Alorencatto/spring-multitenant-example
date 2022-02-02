@@ -14,8 +14,10 @@ import java.io.Serializable;
 //@Filter(name = "tenantFilter", condition = "tenant_id = :tenantId")
 public class City implements Serializable {
     private static final long serialVersionUID = -4551953276601557391L;
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
