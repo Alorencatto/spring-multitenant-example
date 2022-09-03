@@ -20,7 +20,6 @@ public class CityService {
 
     public List<City> getAll() throws SQLException {
         return cityRepository.findAll();
-
     }
 
     public City get(Long id) {
